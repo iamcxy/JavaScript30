@@ -1,5 +1,7 @@
 ## JS Drum Kit
 
+DEMO [HERE](https://cdn.rawgit.com/iamcxy/JavaScript30/c812f70e/01%20-%20JavaScript%20Drum%20Kit/index-PRACTICE.html) 
+
 Each key is associated with a keycode. you can find the code conveniently at http://keycode.info. 
 
 `data-key` attribute in HTML tags is used for JS to associate specified keystroke with specific audio and visual animations. 
