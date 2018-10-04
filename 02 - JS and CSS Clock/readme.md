@@ -19,7 +19,7 @@ use `setInterval(func, delay)` to update the clock every second, and `Date()` ob
 
 `const hour_degree = (hour + (min/60) + (seconds/360))/12 * 360 + 90;` Degree calculation of hour should include the percentage lapsed in minutes and seconds within the hour. 
 
-at 0 seconds the secondhand will transform from 354 degree back to 0 degree based on the math equation `((seconds / 60) * 360) + 90`. We simply tally the amount of degrees and keep on counting, so when it revisit 0 second it does show redundent backward transition. Alternate solution is temporarily take off the css property `transition: all 0.5s;`. 
+at 0 seconds the secondhand will transform from 354 degree back to 0 degree based on the math equation `((seconds / 60) * 360) + 90`. We simply tally the amount of degrees and keep on counting, so when it revisit 0 second it does show redundent backward transition ` seconds/60 * 360 + (hour * 360) + (min * 360) + 90`. Alternate solution is to change the time in transition to 0s temporarily. `transition: all 0.5s;`
 
 
 
