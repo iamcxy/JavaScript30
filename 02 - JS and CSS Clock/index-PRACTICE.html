@@ -63,37 +63,35 @@
       position: absolute;
       top: 50%;
       transform-origin: 100%;
-      transform: rotate(90deg);
-      transition: all 0.05s;
-      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+      transform: rotate(90deg); /* start at origin 0 in clock */
+      transition: all 0.5s;
+      transition-timing-function: cubic-bezier(0, 2.4, 0.45, 1);
     }
-</style>
 
-<script>
-  const secondHand = document.querySelector('.second-hand');
-  const minsHand = document.querySelector('.min-hand');
-  const hourHand = document.querySelector('.hour-hand');
+  </style>
+    
 
-  function setDate() {
-    const now = new Date();
+  <script>
+    function setTime(){
+      const now = new Date();
+      const seconds = now.getSeconds();
+      const min = now.getMinutes();
+      const hour = now.getHours();
 
-    const seconds = now.getSeconds();
-    const secondsDegrees = ((seconds / 60) * 360) + 90;
-    secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+      const second_hand = document.querySelector('.second-hand');
+      const min_hand = document.querySelector('.min-hand');
+      const hour_hand = document.querySelector('.hour-hand');
+      
+      const second_degree = seconds/60 * 360 + (min * 360) + 90;
+      const min_degree = (min + (seconds/60))/60 * 360 + 90;
+      const hour_degree = (hour + (min/60) + (seconds/360))/12 * 360 + 90; 
 
-    const mins = now.getMinutes();
-    const minsDegrees = ((mins / 60) * 360) + ((seconds/60)*6) + 90;
-    minsHand.style.transform = `rotate(${minsDegrees}deg)`;
+      second_hand.style.transform = `rotate(${second_degree}deg)`;
+      min_hand.style.transform = `rotate(${min_degree}deg)`;
+      hour_hand.style.transform = `rotate(${hour_degree}deg)`;
+    }
 
-    const hour = now.getHours();
-    const hourDegrees = ((hour / 12) * 360) + ((mins/60)*30) + 90;
-    hourHand.style.transform = `rotate(${hourDegrees}deg)`;
-  }
-
-  setInterval(setDate, 1000);
-
-  setDate();
-
-</script>
+    setInterval(setTime, 1000);
+  </script>
 </body>
 </html>
