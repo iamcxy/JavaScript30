@@ -82,7 +82,13 @@
       const min_hand = document.querySelector('.min-hand');
       const hour_hand = document.querySelector('.hour-hand');
       
-      const second_degree = seconds/60 * 360 + (min * 360) + 90;
+      if (seconds === 0) { 
+        second_hand.style.transition = "all 0s";
+      }
+      if (seconds === 1) { 
+        second_hand.style.transition = "all 0.5s cubic-bezier(0, 2.4, 0.45, 1)";
+      }
+      const second_degree = seconds/60 * 360 + 90;
       const min_degree = (min + (seconds/60))/60 * 360 + 90;
       const hour_degree = (hour + (min/60) + (seconds/360))/12 * 360 + 90; 
 
