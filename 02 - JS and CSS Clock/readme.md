@@ -1,5 +1,7 @@
 ## Clock in CSS and JS
 
+DEMO [HERE](https://cdn.rawgit.com/iamcxy/JavaScript30/37c1e060/02%20-%20JS%20and%20CSS%20Clock/index-PRACTICE.html) 
+
 Use Chrome console to experiment with different css properties under debugging tool->Sytles.
 
 3 `<div>` with class `hand` are created to repsent sec, min, hour hands. 
