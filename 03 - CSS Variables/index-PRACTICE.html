@@ -18,23 +18,19 @@
     <input id="base" type="color" name="base" value="#ffc600">
   </div>
 
-  <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+  <img src="https://bit.ly/2OAkIIc">
 
   <style>
     :root {
-      --base: #ffc600;
+      --base: yellow;
       --spacing: 10px;
       --blur: 10px;
     }
-
+    
     img {
       padding: var(--spacing);
       background: var(--base);
       filter: blur(var(--blur));
-    }
-
-    .hl {
-      color: var(--base);
     }
 
     /*
@@ -61,16 +57,19 @@
 
   <script>
     const inputs = document.querySelectorAll('.controls input');
-
-    function handleUpdate() {
-      const suffix = this.dataset.sizing || '';
-      document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+    
+    function handleUpdate(){
+      // console.log(this.dataset.sizing);
+      const suffix = this.dataset.sizing || '' // empty string to avoid color input does not contain data-sizing attribute
+      document.documentElement.style.setProperty(`--${this.name}`, this.value+suffix);
     }
 
-    inputs.forEach(input => input.addEventListener('change', handleUpdate));
-    inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+    inputs.forEach( input => {
+      input.addEventListener("change", handleUpdate)
+      input.addEventListener("mousemove", handleUpdate)
+    })
+    
   </script>
-
 
 </body>
 </html>

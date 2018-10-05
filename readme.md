@@ -10,4 +10,4 @@ DAY2. [JS and CSS Clock](https://cdn.rawgit.com/iamcxy/JavaScript30/37c1e060/02%
 
 DAY3. [CSS Variables] ()
 
-HTML files served raw directly from Github using RawGit(https://rawgit.com/)
+HTML files served raw directly from Github using [RawGit](https://rawgit.com/)

@@ -13,6 +13,8 @@ Set transform-origin at 100% to allow the hands to rotate at the origin of the c
 `transform`
 We rotate the hand at 90 degree so the hands start 0 in the clock. 
 
+transition make the elements change gradually and smoothly from one state to another, while transform move and change the appearce of the element. 
+
 use `setInterval(func, delay)` to update the clock every second, and `Date()` object to get current time. Note that the function ref needs to be passed not the function execution`func()` with return. 
 
 `transition-timing-function` entered under element.style of particular element in debugger tool would show a little icon to allow us tweak the function parameters to produce fun results.
