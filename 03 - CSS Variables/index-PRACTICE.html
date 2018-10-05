@@ -21,7 +21,8 @@
   <img src="https://bit.ly/2OAkIIc">
 
   <style>
-    :root {
+    /* or :root */
+    body { 
       --base: yellow;
       --spacing: 10px;
       --blur: 10px;
@@ -46,6 +47,9 @@
       font-size: 50px;
     }
 
+    .hl {
+      color: var(--base);
+    }
     .controls {
       margin-bottom: 50px;
     }
@@ -61,7 +65,7 @@
     function handleUpdate(){
       // console.log(this.dataset.sizing);
       const suffix = this.dataset.sizing || '' // empty string to avoid color input does not contain data-sizing attribute
-      document.documentElement.style.setProperty(`--${this.name}`, this.value+suffix);
+      document.body.style.setProperty(`--${this.name}`, this.value+suffix);
     }
 
     inputs.forEach( input => {
