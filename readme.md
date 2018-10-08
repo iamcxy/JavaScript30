@@ -10,4 +10,6 @@ DAY2. [JS and CSS Clock](https://github.com/iamcxy/JavaScript30/tree/master/02%2
 
 DAY3. [CSS Variables](https://github.com/iamcxy/JavaScript30/tree/master/03%20-%20CSS%20Variables)
 
+DAY4. [Array Cardio Day 1](https://github.com/iamcxy/JavaScript30/tree/master/04%20-%20Array%20Cardio%20Day%201)
+
 HTML files served raw directly from Github using [RawGit](https://rawgit.com/)
