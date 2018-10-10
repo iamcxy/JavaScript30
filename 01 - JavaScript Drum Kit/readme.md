@@ -16,7 +16,7 @@ When you have an array/list of elements, you can't listen on all of them. We mus
 
 Use `console.log` to debug and learn anything. 
 
-We will use `transitionend` event to remove playing after transition, `removeTransition` is created remove the class. 
+We will use `transitionend` event to remove playing after transition, `removeTransition` is created to remove the class. Multiple transition end event will happen, we only catch transform event which has the longest time. 
 
 `this` is always on the element scope that called against the function, in this case `this` equals to the key that added event listener. 
 
