@@ -12,4 +12,8 @@ DAY3. [CSS Variables](https://github.com/iamcxy/JavaScript30/tree/master/03%20-%
 
 DAY4. [Array Cardio Day 1](https://github.com/iamcxy/JavaScript30/tree/master/04%20-%20Array%20Cardio%20Day%201)
 
+DAY5. [Flex Panel Gallery](https://github.com/iamcxy/JavaScript30/tree/master/05%20-%20Flex%20Panel%20Gallery)
+
+
+RawGit is deprecated.. using [htmlpreview](http://htmlpreview.github.io/) instead 
 HTML files served raw directly from Github using [RawGit](https://rawgit.com/)
