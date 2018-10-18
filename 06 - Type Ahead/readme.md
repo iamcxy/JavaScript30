@@ -1,4 +1,5 @@
 ## Type Ahead
+[DEMO](http://htmlpreview.github.io/?https://github.com/iamcxy/JavaScript30/blob/master/06%20-%20Type%20Ahead/index-PRACTICE.html)
 
 ### Fetch
 we will use promise to get the response in es6 format `fetch(promise).then().then()....`
@@ -13,6 +14,10 @@ calling `.join('')` on an array will turn the array into joint strings.(suited f
 
 
 ### Add commas to number
-use ```function numberWithCommas(x) {
+use 
+```
+function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-}```  to add commas to the numbers
+}
+```
+to parse numbers with comma

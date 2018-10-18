@@ -14,6 +14,8 @@ DAY4. [Array Cardio Day 1](https://github.com/iamcxy/JavaScript30/tree/master/04
 
 DAY5. [Flex Panel Gallery](https://github.com/iamcxy/JavaScript30/tree/master/05%20-%20Flex%20Panel%20Gallery)
 
+DAY6. [Type Ahead](https://github.com/iamcxy/JavaScript30/tree/master/06%20-%20Type%20Ahead)
+
 
 RawGit is deprecated.. using [htmlpreview](http://htmlpreview.github.io/) instead 
 HTML files served raw directly from Github using [RawGit](https://rawgit.com/)
